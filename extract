@@ -10,37 +10,26 @@ if [ -f $1 ] ; then
   case $1 in
     *.tar.bz2)   tar xjf $1
                  echo "Used tar xjf";;
-
     *.tar.gz)    tar xzf $1   
                  echo "Used tar xzf";;
-
     *.bz2)       bunzip2 $1   
                  echo "Used bunzip2";;
-
     *.rar)       unrar x $1     
                  echo "Used unrar x";;
-
     *.gz)        gunzip $1    
                  echo "Used gunzip";;
-
     *.tar)       tar xf $1    
                  echo "Used tar xf";;
-
     *.tbz2)      tar xjf $1   
                  echo "Used tar xjf";;
-
     *.tgz)       tar xzf $1   
                  echo "Used tar xzf";;
-
     *.zip)       unzip $1     
                  echo "Used unzip";;
-
     *.Z)         uncompress $1
                  echo "Used uncompress";;
-
     *.7z)        7z x $1      
                  echo "Used 7z";;
-
     *)           echo "'$1' cannot be extracted" ;;
   esac
 
